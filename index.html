@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Digital clock</title>
+</head>
+<body>
+    <div class="clock_img"></div>
+    <div class="time_box1">
+        <div class="timeline one" >
+            <span style="margin-top:10px; margin-left:20px;" id ="hours">00</span>
+            <p style="margin-left:10px;">hours</p> <span class="dot">:</span>
+        </div>     
+        <div class="timeline two">
+            <span style="margin-top:10px; margin-left:20px;" id = "minutes">00</span>
+            <p style="margin-left:10px;"> mins</p><span class="dot">:</span>
+        </div>
+        <div class="timeline three">
+            <span style="margin-top:10px; margin-left:20px;" id="secs">00</span>
+                <p style="margin-left:10px;">secs</p> 
+        </div>
+
+        <div class="timeline2">
+            <span style="margin-left:10px;margin-top:20px" id="am">AM</span>
+        </div>
+        <div>
+            <p class="time">TIME</p>
+        </div>
+    </div>
+    <div class="time_box2"></div>
+    <div class="time_box3"></div>
+    <div class="time_table">
+        <table>
+            <tr>
+                <td><img src="./wake_up.svg"></td>
+                <td class="set">Set wake up time</td>
+                <td>
+                    <select  name="Time1" id="Time1" style="height:30px; width:200px;font: normal normal normal 14px/20px Manrope;
+                        letter-spacing: 0.25px;
+                        color: #3D087BDE;"> 
+                        <option value="05 AM - 06 AM" class="set" selected>SET TIME</option>
+                        <option value="1" name="1" class="set">01 AM - 02 AM</option>
+                        <option value="2" class="set">02 AM - 03 AM</option>
+                        <option value="3" class="set">03 AM - 04 AM</option>
+                        <option value="4" class="set">04 AM - 05 AM</option>
+                        <option value="5" class="set">05 AM - 06 AM</option>
+                        <option value="6" class="set">06 AM - 07 AM</option>
+                        <option value="7" class="set">07 AM - 08 AM</option>
+                        <option value="8" class="set">08 AM - 09 AM</option>
+                        <option value="9" class="set">09 AM - 10 AM</option>
+                        <option value="10" class="set">10 AM - 11 AM</option>
+                        <option value="11" class="set">11 AM - 12 AM</option>
+                        <option value="12" class="set">12 PM - 01 PM</option>
+                        <option value="13" class="set">01 PM - 02 PM</option>
+                        <option value="14" class="set">02 PM - 03 PM</option>
+                        <option value="15" class="set">03 PM - 04 PM</option>
+                        <option value="16" class="set">04 PM - 05 PM</option>
+                        <option value="17" class="set">05 PM - 06 PM</option>
+                        <option value="18" class="set">06 PM - 07 PM</option>
+                        <option value="19" class="set">07 PM - 08 PM</option>
+                        <option value="20" class="set">08 PM - 09 PM</option>
+                        <option value="21" class="set">09 PM - 10 PM</option>
+                        <option value="22" class="set">10 PM - 11 PM</option>
+                        <option value="23" class="set">11 PM - 12 PM</option>
+                        <option value="24" class="set">12 AM - 01 AM</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./lunch_time.svg"></td>
+                <td class="set">Set lunch time</td>
+                <td>
+                    <select name="Time2" id="Time2"
+                    style="height:30px; width:200px;font: normal normal normal 14px/20px Manrope;
+                        letter-spacing: 0.25px;
+                        color: #3D087BDE;">
+                        <option value="12 PM - 01 PM" class="set" selected>SET TIME</option>
+                        <option value="1" class="set">01 AM - 02 AM</option>
+                        <option value="2" class="set">02 AM - 03 AM</option>
+                        <option value="3" class="set">03 AM - 04 AM</option>
+                        <option value="4" class="set">04 AM - 05 AM</option>
+                        <option value="5" class="set">05 AM - 06 AM</option>
+                        <option value="6" class="set">06 AM - 07 AM</option>
+                        <option value="7" class="set">07 AM - 08 AM</option>
+                        <option value="8" class="set">08 AM - 09 AM</option>
+                        <option value="9" class="set">09 AM - 10 AM</option>
+                        <option value="10" class="set">10 AM - 11 AM</option>
+                        <option value="11" class="set">11 AM - 12 AM</option>
+                        <option value="12" class="set">12 PM - 01 PM</option>
+                        <option value="13" class="set">01 PM - 02 PM</option>
+                        <option value="14" class="set">02 PM - 03 PM</option>
+                        <option value="15" class="set">03 PM - 04 PM</option>
+                        <option value="16" class="set">04 PM - 05 PM</option>
+                        <option value="17" class="set">05 PM - 06 PM</option>
+                        <option value="18" class="set">06 PM - 07 PM</option>
+                        <option value="19" class="set">07 PM - 08 PM</option>
+                        <option value="20" class="set">08 PM - 09 PM</option>
+                        <option value="21" class="set">09 PM - 10 PM</option>
+                        <option value="22" class="set">10 PM - 11 PM</option>
+                        <option value="23" class="set">11 PM - 12 PM</option>
+                        <option value="24" class="set">12 AM - 01 AM</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td><img src="./nap_time.svg"></td>
+                <td class="set">Set nap time</td>
+                <td> 
+                 <select name="Time3" id="Time3" style="height:30px; width:200px;font: normal normal normal 14px/20px Manrope;
+                    letter-spacing: 0.25px;
+                    color: #3D087BDE;">
+                    <option value=" 04 PM - 05 PM" class="set" selected>SET TIME</option>
+                    <option value="1" class="set">01 AM - 02 AM</option>
+                    <option value="2" class="set">02 AM - 03 AM</option>
+                    <option value="3" class="set">03 AM - 04 AM</option>
+                    <option value="4" class="set">04 AM - 05 AM</option>
+                    <option value="5" class="set">05 AM - 06 AM</option>
+                    <option value="6" class="set">06 AM - 07 AM</option>
+                    <option value="7" class="set">07 AM - 08 AM</option>
+                    <option value="8" class="set">08 AM - 09 AM</option>
+                    <option value="9" class="set">09 AM - 10 AM</option>
+                    <option value="10" class="set">10 AM - 11 AM</option>
+                    <option value="11" class="set">11 AM - 12 AM</option>
+                    <option value="12" class="set">12 PM - 01 PM</option>
+                    <option value="13" class="set">01 PM - 02 PM</option>
+                    <option value="14" class="set">02 PM - 03 PM</option>
+                    <option value="15" class="set">03 PM - 04 PM</option>
+                    <option value="16" class="set">04 PM - 05 PM</option>
+                    <option value="17" class="set">05 PM - 06 PM</option>
+                    <option value="18" class="set">06 PM - 07 PM</option>
+                    <option value="19" class="set">07 PM - 08 PM</option>
+                    <option value="20" class="set">08 PM - 09 PM</option>
+                    <option value="21" class="set">09 PM - 10 PM</option>
+                    <option value="22" class="set">10 PM - 11 PM</option>
+                    <option value="23" class="set">11 PM - 12 PM</option>
+                    <option value="24" class="set">12 AM - 01 AM</option>
+                </select> 
+                </td>  
+            </tr> 
+            <tr> 
+                <td><img src="./nap_time.svg"></td>
+                <td class="set">Set night time</td>
+                <td>
+                  <select name="Time4" id="Time4" style="height:30px; width:200px;font: normal normal normal 14px/20px Manrope;
+                        letter-spacing: 0.25px;
+                        color: #3D087BDE;">
+                        <option value="08 PM - 09 PM" class="set" selected>SET TIME</option>
+                        <option value="1" class="set">01 AM - 02 AM</option>
+                        <option value="2" class="set">02 AM - 03 AM</option>
+                        <option value="3" class="set">03 AM - 04 AM</option>
+                        <option value="4" class="set">04 AM - 05 AM</option>
+                        <option value="5" class="set">05 AM - 06 AM</option>
+                        <option value="6" class="set">06 AM - 07 AM</option>
+                        <option value="7" class="set">07 AM - 08 AM</option>
+                        <option value="8" class="set">08 AM - 09 AM</option>
+                        <option value="9" class="set">09 AM - 10 AM</option>
+                        <option value="10" class="set">10 AM - 11 AM</option>
+                        <option value="11" class="set">11 AM - 12 AM</option>
+                        <option value="12" class="set">12 PM - 01 PM</option>
+                        <option value="13" class="set">01 PM - 02 PM</option>
+                        <option value="14" class="set">02 PM - 03 PM</option>
+                        <option value="15" class="set">03 PM - 04 PM</option>
+                        <option value="16" class="set">04 PM - 05 PM</option>
+                        <option value="17" class="set">05 PM - 06 PM</option>
+                        <option value="18" class="set">06 PM - 07 PM</option>
+                        <option value="19" class="set">07 PM - 08 PM</option>
+                        <option value="20" class="set">08 PM - 09 PM</option>
+                        <option value="21" class="set">09 PM - 10 PM</option>
+                        <option value="22" class="set">10 PM - 11 PM</option>
+                        <option value="23" class="set">11 PM - 12 PM</option>
+                        <option value="24" class="set">12 AM - 01 AM</option>
+                    </select>   
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="introduction_msg">
+        <p id="note">GRAB SOME HEALTHY BREAKFAST!!!</p>
+    </div>
+    <div class="zone_msg">
+        <p id="g_msg">GOOD MORNING!! WAKE UP </p>
+    </div>
+    <div class="set_alarm" onclick="setAlarm()">Set Alarm</div>
+    
+    <div class="tt_msg">
+        <p class="nap1">Wakeup Time:&nbsp;&nbsp;&nbsp;<span id="wake_text">05 AM - 06 AM</span></p>
+        <p class="nap1">Lunch Time: &nbsp;&nbsp;&nbsp;<span id="lunch_text">12 PM - 01 PM</span></p>
+        <p class="nap1">Nap Time:&nbsp;&nbsp;&nbsp;&nbsp;<span id="nap_text">04 PM - 05 PM</span></p>
+        <p class="nap1">Night Time:&nbsp;&nbsp;&nbsp;<span id="night_text">08 PM - 09 PM</span></p> 
+    </div>
+    <div class="img1" id="images"></div>
+    <script src="index.js"></script>
+</body>
+</html>
